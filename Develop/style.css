@@ -1,4 +1,35 @@
+.body {
+    margin: 0;
+    padding: 0;
+}
 .wrapper {
     width: 600px;
     margin: 0 auto 0 auto;
+}
+
+.header {
+    padding: 20px;
+    text-align: center;
+    color: cornflowerblue;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.btn.btn-primary {
+    background-color: rgb(158, 48, 99);
+    border-color: rgb(158, 48, 99);
+    color: cornsilk;
+}
+
+.btn.btn-primary:hover {
+    background-color: rgb(158, 48, 99);
+    opacity: 5;
+}
+
+.btn.btn-primary:active {
+    background-color: rgb(158, 48, 99);
+}
+
+.btn.btn-primary:active:after {
+    background-color: rgb(158, 48, 99);
 }
