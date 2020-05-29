@@ -15,10 +15,17 @@
     font-weight: 500;
 }
 
+#text-box {
+    margin-left: 10px;
+    margin-right: 0;
+}
+
 .btn.btn-primary {
     background-color: rgb(158, 48, 99);
     border-color: rgb(158, 48, 99);
     color: cornsilk;
+    float: right;
+    padding-left: 10px;
 }
 
 .btn.btn-primary:hover {
@@ -33,3 +40,31 @@
 .btn.btn-primary:active:after {
     background-color: rgb(158, 48, 99);
 }
+
+
+@media (max-width: 690px) {
+    .wrapper {
+      font-size: 1rem;
+      margin: 16px 0px 0px 0px;
+      padding: 10px 15px;
+      width: 660px;
+      text-align: center;
+    }
+    .header {
+        text-align: center;
+        margin: 0 auto 0 auto;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .wrapper
+    .btn {
+      font-size: 0.8rem;
+      width: 480px;
+    }
+    .header {
+        text-align: center;
+        margin: 0 auto 0 auto;
+    }
+  }
+  
