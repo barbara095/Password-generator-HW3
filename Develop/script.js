@@ -26,9 +26,12 @@ var letterChar = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm
 var number = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
 var specialChar = ['!','@', '&', '$', '%', '<', '^', '<', '~', '#', '}', ',', '|', '{', '`', '_', '”', '(', ')', '*', '+'];
 
+var finalPassword;
+
 // Confirm special characters
 var confirmSpecial = confirm("Would you like to include special characters in your password?");
     console.log(confirmSpecial);
+    finalPassword.append(confirmSpecial);
 
 // Prompt number of special characters
     if (confirmSpecial === true) {
@@ -40,11 +43,14 @@ var confirmSpecial = confirm("Would you like to include special characters in yo
         if (countSpecial < 6) {
             var randomSpecial = [specialChar[getRandomNumber(countSpecial.value)]];
             console.log(randomSpecial);
+            finalPassword.append(confirmSpecial + randomSpecial);
         
         // Otherwise set default to 4
         } else {
             countSpecial.value = 4;
+            var randomSpecial = [specialChar[getRandomNumber(countSpecial.value)]];
             console.log(countSpecial);
+            finalPassword.append(confirmSpecial + randomSpecial);
         }
         
     }
@@ -55,9 +61,11 @@ var confirmSpecial = confirm("Would you like to include special characters in yo
             // We're generating a random number of letter characters equal to the length of the password we set, minus the number of random characters
             var randomLower = [letterChar[getRandomNumber(setLength.value - countSpecial.value)]];
             console.log(randomLower);
+            finalPassword.append(confirmSpecial + randomSpecial + randomLower);
         } else {
             var randomLower = [letterChar[getRandomNumber(setLength.value)]];
             console.log(randomLower);
+            finalPassword.append(confirmSpecial + randomSpecial + randomLower);
         }
 
     // Prompt for uppercase characters
@@ -65,24 +73,25 @@ var confirmSpecial = confirm("Would you like to include special characters in yo
         console.log(confirmUpper);
         if (confirmUpper === true && confirmSpecial === true && confirmLower === true) {
             // We're generating a random number of letter characters equal to the length of the password we set, minus the number of random characters minus the number of lower case letters
-            var randomUpper = [letterChar[getRandomNumber(setLength.value - countSpecial.value - randomLower.value)]];
+            var randomUpper = [letterChar[getRandomNumber(setLength.value - countSpecial.value - randomLower.value)]].toUpperCase;
             console.log(randomUpper);
         } else {
             var randomUpper = [letterChar[getRandomNumber(setLength.value)]];
             console.log(randomUpper);
         }
+    
+        document.getElementById("password").innerHTML = finalPassword;
 }
-
-
-
-//  Validate input so that at least one character type is selected
 
 // Once all prompts are answered, generate password 
 
 // Write password to the #password input
 function writePassword() {
-    var password = returnPassword(password + randomSpecial + randomUpper + randomLower);
+    var password = returnPassword;
     let password = "";
+    var passwordText = document.querySelector("#password");
+
+    passwordText.value = password;
     
   }
   
