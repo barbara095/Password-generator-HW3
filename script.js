@@ -26,7 +26,7 @@ var letterChar = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm
 var number = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
 var specialChar = ['!','@', '&', '$', '%', '<', '^', '<', '~', '#', '}', ',', '|', '{', '`', '_', '”', '(', ')', '*', '+'];
 
-var finalPassword;
+var finalPassword = "";
 
 // Confirm special characters
 var confirmSpecial = confirm("Would you like to include special characters in your password?");
@@ -83,6 +83,11 @@ var confirmSpecial = confirm("Would you like to include special characters in yo
         document.getElementById("password").innerHTML = finalPassword;
 }
 
+finalPassword();
+  // Add event listener to generate button
+
+generatePassword.addEventListener("click", finalPassword);
+
 // Once all prompts are answered, generate password 
 
 // Write password to the #password input
@@ -95,5 +100,5 @@ function writePassword() {
     
   }
   
-  // Add event listener to generate button
-  generatePassword.addEventListener("click", writePassword);
+
+  
