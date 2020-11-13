@@ -3,7 +3,7 @@
 This is a password generator application that uses HTML, CSS and JS technologies to compute a secure password based on the user's desired password criteria. 
 
 ## Application
-https://barbara095.github.io/password-generator-HW3/
+https://barbara095.github.io/Password-generator-HW3/
 
 ## User story
 
