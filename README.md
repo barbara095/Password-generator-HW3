@@ -1,6 +1,35 @@
-# password-generator-HW3
+# Password-generator-HW3
 
-For this assignment, I created a password generator based on a series of alerts that asked for the user's desired password criteria. 
-I then set conditions so that a random number of characters will be returned and added/appended to the finalPassword variable, based on the length specified by the user at the start. 
+This is a password generator application that uses HTML, CSS and JS technologies to compute a secure password based on the user's desired password criteria. 
 
+## Application
+https://barbara095.github.io/password-generator-HW3/
 
+## User story
+
+AS AN employee with access to sensitive data
+I WANT to randomly generate a password that meets certain criteria
+SO THAT I can create a strong password that provides greater security
+
+## Acceptance criteria
+GIVEN I need a new, secure password
+WHEN I click the button to generate a password
+THEN I am presented with a series of prompts for password criteria
+WHEN prompted for password criteria
+THEN I select which criteria to include in the password
+WHEN prompted for the length of the password
+THEN I choose a length of at least 8 characters and no more than 128 characters
+WHEN prompted for character types to include in the password
+THEN I choose lowercase, uppercase, numeric, and/or special characters
+WHEN I answer each prompt
+THEN my input should be validated and at least one character type should be selected
+WHEN all prompts are answered
+THEN a password is generated that matches the selected criteria
+WHEN the password is generated
+THEN the password is either displayed in an alert or written to the page
+
+## Images of application 
+
+![Image 1](Assets/images/App2.png)
+
+![Image 2](Assets/images/App1.png)
