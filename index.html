@@ -1,33 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <!-- Set compatibility -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-    <title>Password Generator</title>
 
-    <!-- Link css stylesheet -->
-    <link rel="stylesheet" href="style.css">
-    <!-- Link Bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<head>
+	<!-- Set compatibility -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>Password Generator</title>
+
+	<!-- Link css stylesheet -->
+	<link rel="stylesheet" href="style.css">
+	<!-- Link Bootstrap -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+		integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 </head>
 
 <body>
-    
-<header class="header">Password Generator</header>
 
-<div class="wrapper">
-    <div class="card text-center">
-        <div class="card-header"></div>
-        <div class="card-body">
-            <h1>Your unique password is</h1>
-            <textarea readonly id="password" placeholder="Your Secure Password"></textarea>
-        <a href="#" id="generate" class="btn btn-primary">Generate Password</a>
-        </div>
-    </div>
-</div>
-<script src="script.js"></script>
+	<header class="header">Password Generator</header>
+
+	<div class="wrapper">
+		<div class="card text-center">
+			<div class="card-header">
+				<a href="#" id="generate" class="btn btn-primary">Generate Password</a>
+			</div>
+				<div class="card-body">
+					<h1 class="title-password">Your unique password is</h1>
+					<textarea readonly id="password"></textarea>
+				</div>
+			
+		</div>
+	</div>
+	<script src="script.js"></script>
 
 </body>
+
 </html>
